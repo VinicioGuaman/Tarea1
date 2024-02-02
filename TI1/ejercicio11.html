@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="menu-container">
+    <h1>MENU</h1>
+    <form action="menu.php" method="post">
+        <label for="option">Seleccione una opción:</label>
+        <select name="option" id="option">
+            <option value="1">FACTORIAL</option>
+            <option value="2">PRIMO</option>
+            <option value="3">SERIE MATEMATICA</option>
+            <option value="S">SALIR</option>
+        </select>
+        <br>
+        <label for="number">Ingrese un número (entre 0 y 10):</label>
+        <input type="number" name="number" id="number" min="0" max="10" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+</html>

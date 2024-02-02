@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Interactivo</title>
+</head>
+<body>
+    <form action="process.php" method="post">
+        <label for="numero">Ingrese un número (0 <= num <= 10): </label>
+        <input type="number" name="numero" id="numero" min="0" max="10" required>
+
+        <label for="opcion">Seleccione una opción:</label>
+        <select name="opcion" id="opcion" required>
+            <option value="1">Factorial</option>
+            <option value="2">Primo</option>
+            <option value="3">Serie Matemática</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
